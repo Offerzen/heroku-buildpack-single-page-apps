@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+cd $1/client
+echo "-----> Installing Lerna"
+npm install -D lerna
+
+echo "-----> Bootstrapping Lerna"
+npx lerna bootstrap
+
+echo "-----> Building SPAs"
+npx lerna ci:deploy
