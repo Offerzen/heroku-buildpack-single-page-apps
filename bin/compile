@@ -10,4 +10,4 @@ echo "-----> Bootstrapping Lerna"
 npx lerna bootstrap
 
 echo "-----> Building SPAs"
-npx lerna run ci:deploy
+npx lerna run deploy:ci
