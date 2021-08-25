@@ -3,7 +3,7 @@
 set -eo pipefail
 
 if [[ -f $1/client/lerna.json ]]; then
-  echo "-----> Build SPA"
+  echo "Build SPA"
   exit 0
 else
   exit 1
